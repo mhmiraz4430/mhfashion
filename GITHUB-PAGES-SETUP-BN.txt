@@ -1,0 +1,32 @@
+MH FASHION — GITHUB PAGES DEPLOYMENT
+====================================
+
+আপনার স্ক্রিনশটে ওয়েবসাইটটি HTML-এর ডিফল্ট (unstyled) রূপে দেখা যাচ্ছে।
+এটি সাধারণত হয় যখন index.html-এর সঙ্গে style.css একই জায়গায় আপলোড হয়নি,
+অথবা ফাইলের নাম/ফোল্ডার ভুল হয়েছে।
+
+এই ZIP-এ ফাইলগুলো root-এ রাখা হয়েছে:
+- index.html
+- style.css
+- script.js
+- config.js
+- supabase-setup.sql
+- .nojekyll
+
+GitHub-এ আপলোড:
+1. ZIP Extract করুন।
+2. GitHub repository `mhfashion` খুলুন।
+3. Code ট্যাবে repository-র root-এ যান (কোনো অতিরিক্ত folder-এর ভিতরে নয়)।
+4. Add file > Upload files নির্বাচন করুন।
+5. Extract করা ফোল্ডারের ভেতরের সব ফাইল একসঙ্গে নির্বাচন করুন। `.nojekyll`-ও অন্তর্ভুক্ত করুন।
+6. Commit changes করুন।
+7. Settings > Pages-এ গিয়ে Deploy from a branch, Branch `main`, folder `/ (root)` নির্বাচন করে Save করুন।
+8. কয়েক মিনিট পর https://mhmiraz4430.github.io/mhfashion/ খুলুন।
+9. Ctrl+Shift+R দিয়ে hard refresh করুন।
+
+খুব গুরুত্বপূর্ণ:
+- ZIP ফাইলটিকে সরাসরি repository-তে আপলোড করলে সাইট ঠিক হবে না; ZIP Extract করে ভেতরের ফাইলগুলো আপলোড করতে হবে।
+- index.html, style.css, script.js এবং config.js একই root folder-এ থাকতে হবে।
+- ফাইলের নামের বড়/ছোট হাতের অক্ষর হুবহু মিলতে হবে।
+- GitHub Pages static hosting; Supabase-এর public project URL ও anon/publishable key config.js-এ থাকতে পারে। service_role/secret key কখনো প্রকাশ করবেন না।
+- এই প্যাকেজে আপনার আগের config.js অপরিবর্তিত রাখা হয়েছে।
